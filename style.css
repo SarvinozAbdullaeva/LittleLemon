@@ -1,0 +1,289 @@
+/* ===== Base ===== */
+body{
+    background-color: #ededed;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 3rem 5%;
+    color: #2f2f2f;
+}
+
+h1{
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+h2{
+    font-size: 2rem;
+}
+
+a{
+    color: inherit;
+}
+
+/* ===== Header ===== */
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header > img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    width: 50%;
+    height: auto;
+}
+
+/* ===== Nav ===== */
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    border-radius: 15px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background-color: #31ac47;
+}
+
+/* ===== Hero (section 1 on homepage) ===== */
+#sec1{
+    border-radius: 15px;
+    background-image: url(img/pasta.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+}
+
+#sec1 article{
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+#sec1 p{
+    color: #f5f5f5;
+}
+
+/* ===== Generic section / card layout ===== */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    gap: 0.5%;
+}
+
+.sec2 article {
+    background-color: bisque;
+}
+
+article{
+    flex: 1 1 280px;
+    margin: 0.5%;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+article img{
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== Page header banner (used on inner pages) ===== */
+.page-banner{
+    background-color: #495e57;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.page-banner h1{
+    text-shadow: none;
+    color: #f4ce14;
+}
+
+/* ===== Menu page ===== */
+.menu-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-top: 1%;
+}
+
+.menu-item{
+    flex: 1 1 300px;
+    background-color: bisque;
+    border-radius: 15px;
+    padding: 1.2rem;
+    margin: 0.5%;
+}
+
+.menu-item img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item .price{
+    float: right;
+    font-weight: bold;
+    color: #31ac47;
+}
+
+/* ===== About page ===== */
+.about-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2%;
+    margin-top: 1%;
+    background-color: bisque;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.about-wrap img{
+    flex: 1 1 260px;
+    max-width: 300px;
+    height: auto;
+}
+
+.about-wrap div{
+    flex: 2 1 320px;
+}
+
+/* ===== Booking form ===== */
+.booking-form{
+    background-color: bisque;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 1%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-form label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border-radius: 8px;
+    border: 1px solid #999;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.booking-form button{
+    margin-top: 1.5rem;
+    background-color: #31ac47;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.booking-form button:hover{
+    background-color: #268a39;
+}
+
+/* ===== Footer ===== */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+    align-items: center;
+}
+
+footer div {
+    flex: 1;
+}
+footer div img{
+    display: flex;
+    max-width: 80px;
+    height: auto;
+}
+footer .foot2{
+    border-top: 1px solid;
+    text-align: right;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px){
+    body{
+        margin: 1.5rem 4%;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    article{
+        margin: 0.5rem 0;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    .about-wrap{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-wrap img{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .foot2{
+        border-top: none;
+        border-bottom: 1px solid;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        order: -1;
+    }
+
+    footer div img{
+        margin: 0 auto 0.5rem auto;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon — Book a Table</title>
+    <meta name="description" content="Book a table at Little Lemon.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <img src="img/logo.png" alt="Little Lemon logo"></header>
+
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="menu.html">Menu</a></li>
+            <li> <a href="book.html" class="active">Book</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-banner">
+            <article>
+                <h1>Book a Table</h1>
+                <p>Reserve your spot — we can't wait to see you.</p>
+            </article>
+        </section>
+
+        <form class="booking-form" action="#" method="post">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of guests</label>
+            <select id="guests" name="guests">
+                <option value="1" selected>1</option>
+                <option value="2" >2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6+">6+</option>
+            </select>
+
+            <label for="notes">Special requests</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img src="img/logo1.png" alt="Little Lemon icon">
+        </div>
+
+        <div class="foot2">
+            <p>Copyright Little Lemon</p>
+        </div>
+    </footer>
+
+</body>
+</html>
